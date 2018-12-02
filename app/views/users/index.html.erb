@@ -1,0 +1,20 @@
+<div class="container">
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Nome</th>
+				<th>Email</th>
+				<th>Por que participa?</th>
+			</tr>
+		</thead>
+		<tbody>
+			<% @users.each do |u| %>
+				<tr>
+					<td><%= u.name %></td>
+					<td><%= u.email %></td>
+					<td><%= u.why_participate %></td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+</div>
